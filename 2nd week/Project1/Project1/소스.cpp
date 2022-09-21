@@ -2,8 +2,8 @@
 
 int main(void)
 {
-	printf("ÇÐ¹ø : %d\n", 2019012659);
-	printf("ÀÌ¸§ : %s\n", "±è½Â¹Î");
-	printf("ÇÐÁ¡ : %c\n", 'A');
+	printf("student id : %d\n", 2019012659);
+	printf("name : %s\n", "kim seung min");
+	printf("Grades : %c\n", 'A');
 	return 0;
 }
