@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+#define MINCHEST  90
+#define MAXCHEST  100
 int main(void)
 {
 	int chest;
@@ -7,11 +9,11 @@ int main(void)
 
 	printf("Enter your chest size : ");
 	scanf_s("%d", &chest);
-	if (chest <= 90)
+	if (chest <= MINCHEST)
 	{
 		size = 'S';
 	}
-	else if ((chest < 100) && (chest >= 90))
+	else if ((chest < MAXCHEST) && (chest >= MINCHEST))
 	{
 		size = 'M';
 	}
