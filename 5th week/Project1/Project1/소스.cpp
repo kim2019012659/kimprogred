@@ -2,15 +2,16 @@
 
 int main(void)
 {
-	int i, j;
+	int i,j;
 
-	for (i = 2; i <= 9; i++)
+	printf("Enter the multiplication as a singular:");
+	scanf_s("%d",&i);
+
+	for (j = 1; j <= 9; j++)
 	{
-		for (j = 1; j <= 9; j++)
-		{
-			printf("%d * %d = %d\n", i, j, i * j);
-		}
+		printf("%d * %d = %d\n", i, j, i * j);
 	}
+	
 
 	return 0;
 }
