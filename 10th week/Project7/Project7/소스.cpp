@@ -5,7 +5,7 @@
 typedef struct
 {
     int num;                  
-    char name[20];            
+    char name[20];
     int kor, eng, mat;        
     int tot;                  
     double avg;               
@@ -40,11 +40,11 @@ void input_data(Student* pary)
     for (i = 0; i < 5; i++)
     {
         printf("> 학번 : ");
-        scanf("%d", &pary->num);
+        scanf_s("%d", &pary->num);
         printf("> 이름 : ");
-        scanf("%s", pary->name);
+        scanf_s("%s", pary->name,20);
         printf("> 국어, 영어, 수학 점수 : ");
-        scanf("%d%d%d", &pary->kor, &pary->eng, &pary->mat);
+        scanf_s("%d%d%d", &pary->kor, &pary->eng, &pary->mat);
 
         pary++;
     }
@@ -100,9 +100,9 @@ void print_data(Student* pary)
 
     for (i = 0; i < 5; i++)
     {
-        printf("%5d%7s%5d%5d%5d%5d%7.1lf%5c\n",
-            pary->num, pary->name, pary->kor, pary->eng,
+        printf("%5d%7s%5d%5d%5d%5d%7.1lf%5c\n",pary->num, pary->name, pary->kor, pary->eng,
             pary->mat, pary->tot, pary->avg, pary->grade);
+               
         pary++;
     }
 }
