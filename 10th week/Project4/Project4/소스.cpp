@@ -11,10 +11,10 @@ int main(void)
 {
 	struct marriage m1 = { "Andy", 22, 'm', 187.5 };
 	struct marriage* mp = &m1;
-	printf("name : %s ", mp->name);
-	printf("age : %d ", mp->age);
-	printf("sex : %d ", mp->sex);
-	printf("heighr : %.1lf ", mp->height);
+	printf(" name: %s\n ", mp->name);
+	printf("age: %d\n ", mp->age);
+	printf("sex: %d\n ", mp->sex);
+	printf("heighr: %.1lf\n ", mp->height);
 
 	return 0;
 }
