@@ -5,7 +5,7 @@ int main(void)
 {
     int num;
     int* ap;
-    int i, j, cnt = 0;
+    int i, j;
 
     printf("> enter positive number : ");
     scanf_s("%d", &num);
@@ -44,7 +44,7 @@ int main(void)
         i++;
     }
 
-    for (i = 0; i < (num - 1); i++)
+    for (i = 0; i < (num - 2); i++)
     {
         if (ap[i] != 0)
         {
